@@ -25,7 +25,7 @@
     ABRecordRef record = ABPersonCreate();
     CFErrorRef error;
     // 设置联系人的名字
-    ABRecordSetValue(record, kABPersonLastNameProperty, (__bridge CFTypeRef)name, &error);
+    ABRecordSetValue(record, kABPersonFirstNameProperty, (__bridge CFTypeRef)name, &error);
     // 添加联系人电话号码以及该号码对应的标签名
     ABMutableMultiValueRef multi = ABMultiValueCreateMutable(kABMultiStringPropertyType);
     ABMultiValueAddValueAndLabel(multi, (__bridge CFTypeRef)num, kABPersonPhoneMobileLabel, NULL);
