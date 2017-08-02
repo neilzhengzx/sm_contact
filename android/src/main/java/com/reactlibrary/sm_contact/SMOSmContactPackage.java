@@ -16,7 +16,6 @@ public class SMOSmContactPackage implements ReactPackage {
       return Arrays.<NativeModule>asList(new SMOSmContactModule(reactContext));
     }
 
-    @Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
       return Collections.emptyList();
     }
