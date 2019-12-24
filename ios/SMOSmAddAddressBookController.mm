@@ -45,6 +45,7 @@
     controller.newPersonViewDelegate = self;
     UINavigationController *newNavigationController = [[UINavigationController alloc]
                                                        initWithRootViewController:controller];
+    newNavigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
     
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:newNavigationController animated:YES completion:nil];
     [UINavigationBar appearance].barStyle  = UIBarStyleBlack;
